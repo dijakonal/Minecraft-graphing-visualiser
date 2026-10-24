@@ -113,12 +113,12 @@
     "continents": "minecraft:overworld/continents",
     "depth": "minecraft:overworld/depth",
     "erosion": "minecraft:overworld/erosion",
-    "final_density": "minecraft:overworld/final_density",
+    "final_density": { "type": "visualiser:my_terrain" },
     "ridges": "minecraft:overworld/ridges",
     "temperature": "minecraft:overworld/temperature",
     "vegetation": "minecraft:overworld/vegetation"
   },
-  "sea_level": 100,
+  "sea_level": 0,
   "spawn_target": [
     {
       "minecraft:overworld/continents": [
