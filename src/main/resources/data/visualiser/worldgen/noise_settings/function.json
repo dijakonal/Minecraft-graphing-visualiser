@@ -1,48 +1,5 @@
 {
-  "aquifers": {
-    "barrier": {
-      "type": "minecraft:noise",
-      "noise": "minecraft:aquifer_barrier",
-      "xz_scale": 1.0,
-      "y_scale": 0.5
-    },
-    "exclusion": {
-      "type": "minecraft:min",
-      "left": {
-        "type": "minecraft:sub",
-        "left": -0.225,
-        "right": "minecraft:overworld/erosion"
-      },
-      "right": {
-        "type": "minecraft:max",
-        "left": {
-          "type": "minecraft:sub",
-          "left": "minecraft:overworld/depth",
-          "right": 0.9
-        },
-        "right": 0.0
-      }
-    },
-    "fluid_level_floodedness": {
-      "type": "minecraft:noise",
-      "noise": "minecraft:aquifer_fluid_level_floodedness",
-      "xz_scale": 1.0,
-      "y_scale": 0.67
-    },
-    "fluid_level_spread": {
-      "type": "minecraft:noise",
-      "noise": "minecraft:aquifer_fluid_level_spread",
-      "xz_scale": 1.0,
-      "y_scale": 0.7142857142857143
-    },
-    "lava": {
-      "type": "minecraft:noise",
-      "noise": "minecraft:aquifer_lava",
-      "xz_scale": 1.0,
-      "y_scale": 1.0
-    },
-    "surface_level": "minecraft:overworld/preliminary_surface_level"
-  },
+
   "debug_functions": [
     {
       "function": "minecraft:overworld/final_density",
@@ -113,12 +70,12 @@
     "continents": "minecraft:overworld/continents",
     "depth": "minecraft:overworld/depth",
     "erosion": "minecraft:overworld/erosion",
-    "final_density": { "type": "visualiser:my_terrain" },
+    "final_density": { "type": "visualiser:custom_terrain" },
     "ridges": "minecraft:overworld/ridges",
     "temperature": "minecraft:overworld/temperature",
     "vegetation": "minecraft:overworld/vegetation"
   },
-  "sea_level": 0,
+  "sea_level": -64,
   "spawn_target": [
     {
       "minecraft:overworld/continents": [
